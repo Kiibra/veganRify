@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const commentSchema = new Schema({
   content: String,
-  author: {type: Schema.Types.ObjectId, ref: 'Profile'}
+  author: {type: Schema.Types.ObjectId, ref: "Profile"}
 })
 
 const productSchema = new Schema({
@@ -14,7 +14,7 @@ const productSchema = new Schema({
   },
   imageLink: {
     type: String,
-    required: true,
+    // required: true,
   },
   description: String,
   author: {type: Schema.Types.ObjectId, ref: "Profile"},
