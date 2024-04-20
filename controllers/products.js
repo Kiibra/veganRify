@@ -2,10 +2,10 @@ import { Product } from "../models/product.js"
 
 function newProduct(req, res){
   res.render('products/new', {
-    mealName: 'Add Meal',
+    title: 'Add Product',
   })
 }
 
 export{
-  newProduct as new
+  newProduct as new,
 }

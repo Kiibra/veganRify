@@ -39,3 +39,10 @@ main {
 .right {
   margin-left: auto;
 }
+
+nav > a {
+  /* display: block;
+  text-align: center; */
+  margin-left: 18px;
+
+}

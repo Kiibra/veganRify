@@ -2,17 +2,7 @@
 <link rel="stylesheet" href="stylesheets/products/new.css">
 <%- include('../partials/nav') %>
 
-<main>
-  <h1>Hellooooo</h1>
-  <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
-  <% if (user?.profile.avatar) { %>
-    <div>
-      <img
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
-      />
-    </div>
-  <% } %>
-</main>
+  <h1>Hellooooo testing</h1>
 
-<%- include('./partials/footer') %>
+
+<%- include('../partials/footer') %>

@@ -4,7 +4,7 @@ import { isLoggedIn } from "../middleware/middleware.js";
 
 const router = Router()
 
-router.get('/new', productsCtrl.new)
+router.get('/new', isLoggedIn, productsCtrl.new)
 
 
 export{

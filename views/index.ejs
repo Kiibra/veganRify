@@ -11,6 +11,9 @@
       />
     </div>
   <% } %>
+  <% if (!user) { %>
+    <h2> Please log in using the Google button in the nav!</h2>
+  <% } %>
 </main>
 
 <%- include('./partials/footer') %>
