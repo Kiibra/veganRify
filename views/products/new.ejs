@@ -2,23 +2,18 @@
 <link rel="stylesheet" href="/stylesheets/products/new.css"/>
 <%- include('../partials/nav') %>
 
-<h1><% title %></h1>
-<div class="form-container">
-  <div class="product-image">
-
-  </div>
-  <form action="/products" method="POST">
-    <label for="link-input">Image Link:</label>
-    <input type="text" name="imageLink" placeholder="link an image ">
-    <label for="name-input">Meal Name:</label>
-    <input type="text" name="mealName" required="true" placeholder="Product name">
-    <label for="description-input">Description:</label>
-    <input type="text" name="description" placeholder="taste..">
-    <label for="vegan-checkbox">Is it Vegan:</label>
-    <input type="checkbox" name="vegan" id="vegan-checkbox" >
-    <label for="comment-input">What makes it Vegan?</label>
-    <input type="text" name="comments" placeholder="List main ingredients">
-    <button type="submit">Add Meal🍽️</button>
-  </form>
-</div>
+  <h1><% title %></h1>
+    <form action="/products" method="POST">
+      <label for="link-input">Image Link:</label>
+      <input type="src" name="imageLink" placeholder="image address here... ">
+      <label for="name-input">Meal Name:</label>
+      <input type="text" name="mealName" required="true" placeholder="Product name">
+      <label for="description-input">Description:</label>
+      <textarea type="text" name="description" placeholder="taste.." cols="3" rows="2"></textarea>
+      <!-- <label for="vegan-checkbox">Is it Vegan:</label>
+      <input type="checkbox" name="vegan" checked id="vegan-checkbox" > -->
+      <!-- <label for="comment-input">Main products?</label>
+      <textarea type="text" name="comments" placeholder="List main ingredients" cols="3" rows="2"></textarea><br> -->
+      <button type="submit">Add Meal 🍽️</button>
+    </form>
 <%- include('../partials/footer') %>

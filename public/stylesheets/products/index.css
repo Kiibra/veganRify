@@ -1,0 +1,18 @@
+.product-card {
+  border: 2px solid rgb(188, 181, 178);
+  padding: 16px;
+  border-radius: 32px;
+  margin-bottom: 28px;
+  width: 30%;
+  height: 20%;
+  align-items: center;
+  justify-content:column;
+  display: inline-block;
+}
+
+img {
+height: 60px;
+width: 60px;
+border-radius: 6px;
+margin-left: 50px;
+}

@@ -8,14 +8,8 @@ const commentSchema = new Schema({
 })
 
 const productSchema = new Schema({
-  mealName: {
-    type: String,
-    required: true,
-  },
-  imageLink: {
-    type: String,
-    // required: true,
-  },
+  mealName: { type: String, required: true },
+  imageLink: String,
   description: String,
   author: {type: Schema.Types.ObjectId, ref: "Profile"},
   // ingredients: ({ObjectId, ref: "Ingredient"}),

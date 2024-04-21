@@ -2,8 +2,18 @@
 <link rel="stylesheet" href="/stylesheets/products/index.css"/>
 <%- include('../partials/nav') %>
 
+<title><%= title %></title>
 
-<h1><% title %></h1>
-<h2>This is testing....</h2>
-
+<h2>All Products</h2>
+<div class="products-container">
+  <ul>
+    <% products.forEach(product => { %>
+        <div class="product-card">
+          <p> <img src="<%= product.imageLink %>" alt="product image for post"></p>
+          <h3><%= product.mealName %> - By <%= user.profile.name %></h2>
+          <p><%= product.description %></p>
+        </div>
+    <% }) %>
+</ul>
+</div>
 <%- include('../partials/footer') %>

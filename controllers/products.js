@@ -7,9 +7,13 @@ function newProduct(req, res){
 }
 function index(req, res){
   Product.find({})
-  .then(product =>{
+  // populate the author of each product post
+  .populate('author')
+  .then(products => {
+    console.log(products)
     res.render('products/index', {
-      title: 'All Products'
+      title: 'All Products',
+      products: products
     })
   })
   .catch(err => {
@@ -17,12 +21,13 @@ function index(req, res){
     res.redirect('/')
   })
 }
+
 function create(req, res){
   // get the author who is posting this product from their google profile 
   req.body.author = req.user.profile._id
   // then create a post with the data in the form(red.body)
   Product.create(req.body)
-  .then(product => {
+  .then(products => {
   // then redirect to the post index view/page
     res.redirect('/products')
   })
