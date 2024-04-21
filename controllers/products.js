@@ -66,10 +66,31 @@ function show(req, res){
   })
 }
 
+function createComment(req, res){
+  Product.findById(req.params.productId)
+  .then(product => {
+    req.body.author = req.user.profile._id
+    product.comments.push(req.body)
+    product.save()
+    .then(()=> {
+      res.redirect(`/products/${product._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 export {
   newProduct as new,
   index,
   create,
   deleteProduct as delete,
   show,
+  createComment,
 }

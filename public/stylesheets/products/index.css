@@ -1,4 +1,4 @@
-.product-card {
+.products-card {
   border: 2px solid rgb(188, 181, 178);
   padding: 16px;
   border-radius: 32px;
@@ -11,13 +11,13 @@
 }
 
 img {
-height: 40%;
-width: 40%;
+height: 150%;
+width: 15%;
 border-radius: 6px;
 margin-left: 50px;
 }
 
-.button-container{
+.button-container {
   justify-content: center;
   display: flex;
 }
