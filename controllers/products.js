@@ -10,7 +10,6 @@ function index(req, res){
   // populate the author of each product post
   .populate('author')
   .then(products => {
-    console.log(products)
     res.render('products/index', {
       title: 'All Products',
       products: products
@@ -38,12 +37,15 @@ function create(req, res){
 }
 
 function deleteProduct (req, res){
-
   Product.findByIdAndDelete(req.params.productId)
   .then(product => {
     if (product.author._id.equals(req.user.profile._id)){
     res.redirect('/products')
     }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
   })
 }
 
