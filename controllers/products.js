@@ -53,11 +53,16 @@ function show(req, res){
   Product.findById(req.params.productId)
   // populate the author to get info about the person who made the post
   .populate('author')
+  .populate('comments.author')
   .then(product => {
     res.render('products/show', {
       title: "Product Detail",
       product
     })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
   })
 }
 

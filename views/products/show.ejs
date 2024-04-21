@@ -5,23 +5,15 @@
 <title><%= title %></title>
 
 <h2>All Products</h2>
-<div class="product-container">
-<div class="product-card">
-    <p><img src="<%= product.imageLink %>" alt="product image for post"></p>
-    <h4><%= product.mealName %> - posted by <img src="<%= product.author.avatar %>" alt="profile image of user"><%= product.author.name %></h4>
+<div class="products-container">
+  <div class="product-card">
+    <p> <img src="<%= product.imageLink %>" alt="product image for post"></p>
+    <h2><%= product.mealName %> - posted by <img src="<%= product.author.avatar %>" alt="profile image of user"><%= product.author.name %></h2>
     <p><%= product.description %></p>
-    <div class="product-card">
-      <p> <img src="<%= product.imageLink %>" alt="product image for post"></p>
-      <h2><%= product.mealName %> -posted by <img src="<%= product.author.avatar %>" alt="profile image of user"><%= product.author.name %></h2>
-      <p><%= product.description %></p>
-      <button id="details-button">Details</button>
-      <% if (product.author._id.equals(user.profile._id)) { %>
-        <form action="/posts/<%= product._id%>?_method=DELETE" method="POST">
-        <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-          <button>Delete 🗑️</button>
-        </form>
-        <% } %>
-    </div>
+    <% if (product.author._id.equals(user.profile._id)) { %>
+      <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
+        <button>Delete 🗑️</button>
+      <% } %>
   </div>
 </div>
 <%- include('../partials/footer') %>
