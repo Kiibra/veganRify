@@ -1,9 +1,7 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/products/index.css"/>
 <%- include('../partials/nav') %>
-
 <title><%= title %></title>
-
 <h2>All Products</h2>
 <div class="products-container">
   <ul>
@@ -14,6 +12,7 @@
           <p><%= product.description %></p>
           <button id="details-button">Details</button>
           <% if (product.author._id.equals(user.profile._id)) { %>
+            <form action="/posts/<%= product._id%>?_method=DELETE" method="POST">
             <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
               <button>Delete 🗑️</button>
             </form>

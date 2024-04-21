@@ -36,7 +36,7 @@ function create(req, res){
   })
 }
 
-function deleteProduct (req, res){
+function deleteProduct(req, res){
   Product.findByIdAndDelete(req.params.productId)
   .then(product => {
     if (product.author._id.equals(req.user.profile._id)){
@@ -48,10 +48,23 @@ function deleteProduct (req, res){
     res.redirect('/')
   })
 }
+function show(req, res){
+  // find the product by it's _id
+  Product.findById(req.params.productId)
+  // populate the author to get info about the person who made the post
+  .populate('author')
+  .then(product => {
+    res.render('products/show', {
+      title: "Product Detail",
+      product
+    })
+  })
+}
 
 export {
   newProduct as new,
   index,
   create,
-  deleteProduct as delete
+  deleteProduct as delete,
+  show,
 }

@@ -16,3 +16,21 @@ width: 40%;
 border-radius: 6px;
 margin-left: 50px;
 }
+
+.button-container{
+  justify-content: center;
+  display: flex;
+}
+
+.delete-button {
+  background-color: #d3465b;
+  margin-right: 10px;
+  width: 80px;
+  height: 32px;
+}
+.details-button {
+  background-color: rgb(139, 186, 226);
+  margin-left: 10px;
+  width: 80px;
+  height: 32px;
+}
