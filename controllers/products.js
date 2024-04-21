@@ -36,8 +36,20 @@ function create(req, res){
     res.redirect('/')
   })
 }
+
+function deleteProduct (req, res){
+
+  Product.findByIdAndDelete(req.params.productId)
+  .then(product => {
+    if (product.author._id.equals(req.user.profile._id)){
+    res.redirect('/products')
+    }
+  })
+}
+
 export {
   newProduct as new,
   index,
   create,
+  deleteProduct as delete
 }

@@ -14,6 +14,8 @@ router.get('/new', isLoggedIn, productsCtrl.new)
 // POST localhost:3000/products
 router.post('/', isLoggedIn, productsCtrl.create)
 
+// DELETE localhost:3000/:productId
+router.delete('/:productId', isLoggedIn, productsCtrl.delete)
 
 export{
   router
