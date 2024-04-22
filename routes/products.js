@@ -23,6 +23,9 @@ router.get('/:productId', isLoggedIn, productsCtrl.show)
 // POST localhost:3000/products <- to create a comment under a picture 
 router.post('/:productId/comments', isLoggedIn, productsCtrl.createComment)
 
+// DELETE localhost:3000/:productsId/comments/:commentId
+router.delete('/:productsId', isLoggedIn, productsCtrl.deleteComment)
+
 export{
   router
 }

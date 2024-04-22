@@ -1,22 +1,24 @@
 <%- include('../partials/html-head') %>
 <link rel="stylesheet" href="/stylesheets/products/index.css"/>
 <%- include('../partials/nav') %>
+
 <title><%= title %></title>
 <h2>All Products</h2>
+
 <div class="products-container">
   <ul>
     <% products.forEach(product => { %>
         <div class="product-card">
-          <p> <img src="<%= product.imageLink %>" alt="product image for post"></p>
-          <h4><%= product.mealName %> - posted by <img src="<%= product.author.avatar %>" alt="profile image of user"><%= product.author.name %></h4>
-          <p><%= product.description %></p>
+          <p><img src="<%= product.imageLink %>" alt="product image for post"></p>
+          <h4><%= product.mealName %> - Posted by <%= product.author.name %></h4>
+          <p class="description-p"><%= product.description %></p>
           <% if (product.author._id.equals(user.profile._id)) { %>
             <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-              <button>Delete 🗑️</button>
+              <button class="delete-button">Delete</button>
             </form>
           <% } %>
-          <a href="/products/<%= product._id %>"><button id="details-button">Details</button></a>
-          </div>
+          <a href="/products/<%= product._id %>"><button class="details-button">Details</button></a>
+        </div>
     <% }) %>
 </ul>
 </div>

@@ -53,6 +53,7 @@ function show(req, res){
   Product.findById(req.params.productId)
   // populate the author to get info about the person who made the post
   .populate('author')
+  //display the author by populating it to comments('comments.author')
   .populate('comments.author')
   .then(product => {
     res.render('products/show', {
@@ -86,6 +87,28 @@ function createComment(req, res){
   })
 }
 
+function deleteComment(req, res){
+  // find the specific product by id 
+  Product.findById(req.params.commentsId)
+  .then(product => {
+    // then find the specific comment by id and remove it
+    product.comments.remove({_id: req.params.commentsId})
+    product.save()
+    .then(() => {
+    // redirect to the product id where the comment existed
+    res.redirect(`/products/${product._id}`)
+  })
+    .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 export {
   newProduct as new,
   index,
@@ -93,4 +116,5 @@ export {
   deleteProduct as delete,
   show,
   createComment,
+  deleteComment,
 }
