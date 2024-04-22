@@ -14,6 +14,7 @@
     <% if (product.author._id.equals(user.profile._id)) { %>
       <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
         <button class="delete-button">Delete 🗑️</button>
+      </form>
       <% } %>
   </div>
 
@@ -30,7 +31,7 @@
       <li>
         <%= comment.content %> - <%= comment.author.name%>
         <% if (comment.author._id.equals(user.profile._id)) { %>
-          <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+          <form action="/products/<%= comment._id %>?_method=DELETE" method="POST">
             <button class="delete-comment-button" type="submit">X</button>
           </form>
         <% } %>

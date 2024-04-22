@@ -1,4 +1,5 @@
 import { Product } from "../models/product.js"
+import { Profile } from "../models/profile.js"
 
 function newProduct(req, res){
   res.render('products/new', {
@@ -13,6 +14,21 @@ function index(req, res){
     res.render('products/index', {
       title: 'All Products',
       products: products
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
+function edit(req, res){
+  // req.body.author = req.user.profile._id
+  Product.findById(req.params.productId)
+  .then(product => {
+    res.render('/products/edit', {
+      product: product,
+      title: 'Edit Product'
     })
   })
   .catch(err => {
@@ -109,6 +125,21 @@ function deleteComment(req, res){
   })
 }
 
+function update (req, res){
+  for (let key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+  }
+  Product.findByIdAndUpdate(req.params.productId, req.body, {new: true})
+  .then(product => {
+    // redirect to show view
+    res.redirect(`/products/${product._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/products')
+  })
+}
+
 export {
   newProduct as new,
   index,
@@ -117,4 +148,6 @@ export {
   show,
   createComment,
   deleteComment,
+  edit,
+  update,
 }

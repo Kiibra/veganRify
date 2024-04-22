@@ -14,6 +14,9 @@ router.get('/new', isLoggedIn, productsCtrl.new)
 // POST localhost:3000/products
 router.post('/', isLoggedIn, productsCtrl.create)
 
+// GET localhost:3000/:productId/edit
+router.get('/:productId/edit', isLoggedIn, productsCtrl.edit)
+
 // DELETE localhost:3000/:productId
 router.delete('/:productId', isLoggedIn, productsCtrl.delete)
 
@@ -25,6 +28,9 @@ router.post('/:productId/comments', isLoggedIn, productsCtrl.createComment)
 
 // DELETE localhost:3000/:productsId/comments/:commentId
 router.delete('/:productsId', isLoggedIn, productsCtrl.deleteComment)
+
+// PUT localhost:3000/product/:productId
+router.get('/:productId', isLoggedIn, productsCtrl.update)
 
 export{
   router

@@ -1,0 +1,19 @@
+<%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/products/edit.css"/>
+<%- include('../partials/nav') %>
+
+  <h1><% title %></h1>
+    <form action="/products/<%= product._id %>?_method=PUT" method="POST">
+      <label for="link-input">Image Link:</label>
+      <input type="src" name="imageLink" placeholder="image address here... " value="<%= product.imageLink %>">
+      <label for="name-input">Meal Name:</label>
+      <input type="text" name="mealName" required="true" placeholder="Product name" value="<%= product.mealName %>">
+      <label for="description-input">Description:</label>
+      <textarea type="text" name="description" placeholder="taste.." cols="3" rows="2" value="<%= product.description %>" ></textarea>
+      <!-- <label for="vegan-checkbox">Is it Vegan:</label>
+      <input type="checkbox" name="vegan" checked id="vegan-checkbox" > -->
+      <!-- <label for="comment-input">Main products?</label>
+      <textarea type="text" name="comments" placeholder="List main ingredients" cols="3" rows="2"></textarea><br> -->
+      <button type="submit">Save Meal 🍽️</button>
+    </form>
+<%- include('../partials/footer') %>

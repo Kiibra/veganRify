@@ -19,6 +19,9 @@
               </form>
               <% } %>
               <a href="/products/<%= product._id %>"><button class="details-button">Details</button></a>
+              <a href="<%= products._id %>/edit"><button class="edit-button">Edit</button></a>
+              <!-- <form action="/products/<%= product._id%>?_method=PUT" method="POST"> -->
+              <!-- </form> -->
             </div>
         </div>
     <% }) %>
