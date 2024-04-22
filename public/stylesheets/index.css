@@ -1,0 +1,42 @@
+.about-paragraph {
+  border: 1px solid rgb(58, 55, 55);
+  border-radius: 20px;
+  height: 12vh;
+}
+
+.welcome {
+  margin-right: 78%;
+  margin-top: 30px;
+  font-size: 38px;
+}
+
+.question {
+  float: right;
+  margin-left: 78%;
+}
+
+h3 {
+  font-size: 18px;
+  border: 1px solid rgb(58, 55, 55);
+  border-radius: 8px;
+  margin-right: 92%;
+}
+
+h4 {
+  border: 1px solid rgb(58, 55, 55);
+  padding: 16px;
+  border-radius: 20px;
+  width: 58vh;
+  height: 12vh;
+  /* text-align: center; */
+  margin-top: 2px;
+  float: right;
+  margin-left: 60%;
+  margin-bottom: 4px;
+}
+
+h1{
+  font-size: 78px;
+  color: #e8833a;
+  animation-duration: 3s;
+}

@@ -6,14 +6,18 @@
   width: 30%;
   height: 25%;
   align-items: center;
-  justify-content:center;
-  display: flex;
+  justify-content:space-around;
+  display: inline-block;
   text-align: center;
+  flex-wrap: wrap;
+  display: inline-block;
 }
+
 .products-container{
-  overflow: scroll;
-  direction: ltr;
+flex-wrap: wrap;
+display: inline-block;
 }
+
 img {
 height: 70%;
 width: 65%;
@@ -21,18 +25,24 @@ border-radius: 6px;
 margin-right: 30px;
 }
 
+.button-action{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-evenly;
+  align-content: flex-end;
+}
 
 .delete-button {
-  background-color: #d3465b;
-  margin-right: 10px;
+  background-color: #c3465b;
   width: 75px;
   height: 28px;
   font-size: 15px;
 }
 .details-button {
-  background-color: rgb(139, 186, 226);
-  margin-left: 10px;
-  margin-top: 130px;
+  background-color: rgb(148, 184, 218);
+  /* margin-left: 10px; */
+  margin-top: 10px;
   width: 75px;
   height: 28px;
   font-size: 15px;
@@ -43,4 +53,4 @@ margin-right: 30px;
   font-family: 10px;
   color: #d3465b;
   text-align: right;
-}
+} 

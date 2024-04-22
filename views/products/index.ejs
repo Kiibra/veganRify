@@ -12,12 +12,14 @@
           <p><img src="<%= product.imageLink %>" alt="product image for post"></p>
           <h4><%= product.mealName %> - Posted by <%= product.author.name %></h4>
           <p class="description-p"><%= product.description %></p>
-          <% if (product.author._id.equals(user.profile._id)) { %>
-            <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-              <button class="delete-button">Delete</button>
-            </form>
-          <% } %>
-          <a href="/products/<%= product._id %>"><button class="details-button">Details</button></a>
+          <div class="button-action">
+            <% if (product.author._id.equals(user.profile._id)) { %>
+              <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
+                <button class="delete-button">Delete</button>
+              </form>
+              <% } %>
+              <a href="/products/<%= product._id %>"><button class="details-button">Details</button></a>
+            </div>
         </div>
     <% }) %>
 </ul>
