@@ -16,6 +16,7 @@
 .products-container{
 flex-wrap: wrap;
 display: inline-block;
+/* width: 50%; */
 }
 
 img {

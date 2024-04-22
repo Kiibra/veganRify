@@ -30,7 +30,7 @@ router.post('/:productId/comments', isLoggedIn, productsCtrl.createComment)
 router.delete('/:productsId', isLoggedIn, productsCtrl.deleteComment)
 
 // PUT localhost:3000/product/:productId
-router.get('/:productId', isLoggedIn, productsCtrl.update)
+router.put('/:productId', isLoggedIn, productsCtrl.update)
 
 export{
   router

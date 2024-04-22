@@ -23,17 +23,20 @@ function index(req, res){
 }
 
 function edit(req, res){
-  // req.body.author = req.user.profile._id
   Product.findById(req.params.productId)
   .then(product => {
-    res.render('/products/edit', {
-      product: product,
-      title: 'Edit Product'
-    })
+    if(product.author.equals(req.user.profile._id)) {
+      res.render('products/edit', {
+        product,
+        title: 'Edit Product',
+      })
+    } else {
+      throw new Error('Action Authorized')
+    }
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/')
+    res.redirect('/products')
   })
 }
 
@@ -126,14 +129,18 @@ function deleteComment(req, res){
 }
 
 function update (req, res){
-  for (let key in req.body) {
-    if (req.body[key] === '') delete req.body[key]
-  }
-  Product.findByIdAndUpdate(req.params.productId, req.body, {new: true})
+  // req.body.author = req.user.profile._id
+  Product.findByIdAndUpdate(req.params.productId)
   .then(product => {
-    // redirect to show view
-    res.redirect(`/products/${product._id}`)
-  })
+    if(product.author.equals(req.user.profile._id)) {
+      product.updateOne(req.body)
+      .then(() => {
+        res.redirect(`/products/${product._id}`)
+      })
+    }else {
+      throw new Error('🚫 Not authorized 🚫')
+  }
+})
   .catch(err => {
     console.log(err)
     res.redirect('/products')
