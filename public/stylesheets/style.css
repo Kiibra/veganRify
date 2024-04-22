@@ -52,4 +52,7 @@ nav > a {
   text-align: center; */
   margin-left: 20px;
 }
-
+.avatar{
+  border-radius: 8px;
+  justify-content: flex-start;
+}

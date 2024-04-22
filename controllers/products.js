@@ -31,7 +31,7 @@ function edit(req, res){
         title: 'Edit Product',
       })
     } else {
-      throw new Error('Action Authorized')
+      throw new Error('Action Not Authorized')
     }
   })
   .catch(err => {
@@ -129,23 +129,18 @@ function deleteComment(req, res){
 }
 
 function update (req, res){
-  // req.body.author = req.user.profile._id
-  Product.findByIdAndUpdate(req.params.productId)
+  Product.findByIdAndUpdate(req.params.productId, req.body, {new: true})
   .then(product => {
-    if(product.author.equals(req.user.profile._id)) {
-      product.updateOne(req.body)
-      .then(() => {
-        res.redirect(`/products/${product._id}`)
-      })
-    }else {
-      throw new Error('🚫 Not authorized 🚫')
-  }
-})
+    // redirect to show view
+    res.redirect(`/products/${product._id}`)
+  })
   .catch(err => {
     console.log(err)
     res.redirect('/products')
   })
 }
+
+
 
 export {
   newProduct as new,

@@ -5,19 +5,21 @@
 <main>
   <h2 class="welcome">WELCOME!!! <%= user ? user.profile.name : "" %></h1>
   <% if (user?.profile.avatar) { %>
-    <div>
+    <div class="avatar">
       <img
         src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
+        alt="<%= user.profile.name%>  avatar" 
       />
     </div>
   <% } %>
   <% if (!user) { %>
     <h2 class="question"> Is it Vegan? </h2>
-    <h4> Please log in using the Google button in the nav to check if your meal is vegan and/or share some of your tasty vegan snacks and meals.</h2>
-    <h1 class="animate">VeganRify🥑</h1>
-    <h3> About</h3>
+    <p class="login-inst"> Please log in using the Google button in the nav to check if your meal is vegan and/or share some of your tasty vegan snacks and meals.</h2>
+    <h1 class="title">VeganRify🥑</p>
+    <div class="about">
+      <h5>About</h5>
       <p class="about-paragraph"> VeganRify is an app you can find the answers to your questions about a meal or snack, check if it's vegan or not, share some of your own tasty vegan favs, and explore others favorite vegan delights!</p>
+    </div>
   <% } %>
 </main>
 

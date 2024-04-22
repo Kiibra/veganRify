@@ -32,6 +32,8 @@ router.delete('/:productsId', isLoggedIn, productsCtrl.deleteComment)
 // PUT localhost:3000/product/:productId
 router.put('/:productId', isLoggedIn, productsCtrl.update)
 
+// PUT localhost:3000/:productId/comments/:commnetId
+
 export{
   router
 }
