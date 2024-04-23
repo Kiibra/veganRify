@@ -51,6 +51,10 @@ nav > a {
   text-align: center;
   margin-left: 20px;
 } 
+a:hover {
+  /* letter-spacing: 0.2em;   */
+  transform: scale(1.2);
+}
 
 /* .avatar {
   border-radius: 8px;

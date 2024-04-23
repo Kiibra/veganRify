@@ -4,8 +4,8 @@ section {
   /* justify-content: center;  */
   flex-direction: column; 
   /* justify-content: center; */
-  /* width: 100%;
-  height: 100%;  */
+  width: 100%;
+  height: 100%; 
 }
 
 .user {
@@ -49,7 +49,6 @@ section {
 .title{
   font-size: 68px;
   color: #e8833a;
-  animation-duration: 3s;
   margin-top: 12vh;
   text-align: center;
 }
