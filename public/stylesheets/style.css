@@ -19,9 +19,9 @@ body {
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
   'Helvetica Neue', sans-serif;
   margin: 0; 
-  /* display: flex;
+  /* display: flex; */
   flex-direction: column;
-  align-items: center; */
+  align-items: center; 
   height: 100%;
 }
 
@@ -37,8 +37,8 @@ nav {
 
 main {
   /* display: flex;  */
-  /* align-items: center; 
-  flex-direction: center; */
+  align-items: center; 
+  flex-direction: center;
   justify-content: center;
 }
 

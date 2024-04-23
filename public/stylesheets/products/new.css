@@ -1,14 +1,15 @@
 .form-container {
-  display: flex;
-  margin-left: 50vh;
-  justify-content: center;
-  flex-direction:column;
-
-  
+  background-color: beige;
+  width: 40vh;
+  height: 40vh;
+  align-content: center;
+  align-items: center;
 }
 
-input,textarea {
-  margin-top: 8px;
-  margin-bottom: 20px;
+input, textarea {
+  margin-top: 20px;
 }
 
+.add-meal-btn {
+  margin-top: 10px;
+}
