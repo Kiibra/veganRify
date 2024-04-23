@@ -39,10 +39,11 @@ h2{
   justify-content: flex-start;
   align-items: flex-end;
   margin-top: 0;
+  cursor: pointer;
 }
 
 ul {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 h3{
@@ -74,24 +75,28 @@ align-items: center;
   height: 3vh;
   display: flex;
   margin-left: 10px;
+  cursor: pointer;
 }
 .delete-comment-btn {
   background-color: #d3465b;
   color:beige;
   width: 2vh;
   height: 2vh;
-  font-size: 10px;
+  font-size: 12px;
   border: 0px;
+  cursor: pointer;
 }
 .delete-btn {
   background-color: #d3465b;
   color:beige;
   margin-left: 2px;
   display: flex;
+  cursor: pointer;
 }
 
 .edit-comment-btn{
   font-size: 10px;
   width: 4vh;
   margin-left: 6px;
+  cursor: pointer;
 }

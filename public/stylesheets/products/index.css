@@ -50,15 +50,18 @@ h4{
 }
 .edit-btn {
   float: left;
+  cursor: pointer;
 }
 .delete-btn {
   background-color: #d3465b;
   margin-left: 2px;
+  cursor: pointer;
 }
 .details-btn {
   background-color: rgb(148, 184, 218);
   margin-left: 10px;
   float: right;
+  cursor: pointer;
 }
 
 .description-p {
