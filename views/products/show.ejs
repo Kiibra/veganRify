@@ -30,10 +30,12 @@
       <li>
         <%= comment.content %> - <%= comment.author.name%>
         <% if (comment.author._id.equals(user.profile._id)) { %>
-          <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
-            <button class="delete-comment-btn" type="submit">X</button>
-          </form>
-          <a href="/products/<%= product._id %>/comments/<%= comment._id %>/edit"><button class="edit-comment-btn">Edit</button></a>
+          <div class="comment-btns">
+            <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+              <button class="delete-comment-btn" type="submit">X</button>
+            </form>
+            <a href="/products/<%= product._id %>/comments/<%= comment._id %>/edit"><button class="edit-comment-btn">Edit</button></a>
+          </div>
           <% } %>
         </li>
         <% }) %>
