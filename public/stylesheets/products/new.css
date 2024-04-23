@@ -1,15 +1,33 @@
 .form-container {
-  background-color: beige;
+  border: 3px solid rgb(180, 175, 174);
+  background-color: rgb(230, 230, 225);
+  padding: 16px;
+  border-radius: 18px;
   width: 40vh;
-  height: 40vh;
-  align-content: center;
-  align-items: center;
+  height: 50vh;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-right: 30vh;
 }
 
 input, textarea {
-  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 36vh;
 }
 
+label{
+  /* margin-bottom: 60px; */
+  font-weight: 500;
+  font-size: 16px;
+}
 .add-meal-btn {
-  margin-top: 10px;
+  margin-top: 120px;
+  background-color:#207867;
+  color: white;
+  margin-left: 24vh;
+}
+
+h2 {
+  text-align: center;
+  margin-left: 24vh;
 }

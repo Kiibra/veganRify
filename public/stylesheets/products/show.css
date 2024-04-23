@@ -74,6 +74,11 @@ align-items: center;
   font-size: 10px;
   border: 0px;
 }
+.delete-btn {
+  background-color: #d3465b;
+  margin-left: 2px;
+  display: flex;
+}
 
 .edit-comment-btn{
   font-size: 10px;

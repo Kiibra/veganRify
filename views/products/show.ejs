@@ -13,7 +13,7 @@
     <p class="comment-desc"><%= product.description %></p>
     <% if (product.author._id.equals(user.profile._id)) { %>
       <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-        <button class="delete-btn">Delete 🗑️</button>
+        <button class="delete-btn">Delete Post</button>
       </form>
       <% } %>
   </div>
