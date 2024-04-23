@@ -37,9 +37,9 @@ nav {
 
 main {
   /* display: flex;  */
-  align-items: center; 
-  /* flex-direction: center;
-  justify-content: center; */
+  /* align-items: center; 
+  flex-direction: center; */
+  justify-content: center;
 }
 
 .right {

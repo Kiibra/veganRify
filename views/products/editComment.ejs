@@ -1,13 +1,15 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/products/editComment.css">
 <%- include('../partials/nav') %>
 
 <section> 
   <h1>Edit your Comment</h1>
-
-  <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
-    <textarea type="text" name="content" placeholder="comment here..." value="<%= product.comment.content %>"></textarea>
-    <button class="comment-button" type="submit">Add Comment</button>
-  </form>
+  <div class="comment-form">
+    <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+      <textarea type="text" name="content" placeholder="comment here..." value="<%= product.comment.content %>"></textarea>
+      <button class="comment-button" type="submit">Add Comment</button>
+    </form>
+  </div>
 
 </section>
 
