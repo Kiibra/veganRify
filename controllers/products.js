@@ -56,6 +56,7 @@ function create(req, res){
 }
 
 function deleteProduct(req, res){
+  // req.body.author = req.user.profile._id
   Product.findByIdAndDelete(req.params.productId)
   .then(product => {
     if (product.author._id.equals(req.user.profile._id)){
@@ -140,6 +141,50 @@ function update (req, res){
   })
 }
 
+function editComment (req, res){
+  Product.findById(req.params.productId)
+  .then(product => {
+    const comment = product.comments._id(req.params.commentId)
+    if(comment.author.equals(req.user.profile._id)) {
+      res.render('product/editComment', {
+        product,
+        comment,
+        title: 'Update Comment'
+      })
+    }else{
+      throw new Error('Not Authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/products')
+  })
+}
+
+
+function updateComment(req, res){
+  Product.findById(req.params.productId)
+  .then(product => {
+    const comment = product.comments._id(req.params.commentId)
+    if (comment.author.equals(req.user.profile._id)) {
+      comment.set(req.body)
+      product.save()
+      .then(() => {
+        res.redirect(`/products/${product._id}`)
+      })
+      .catch(err => {
+        console.log(err)
+        res.redirect('/products')
+      })
+    }else{
+      throw new Error('Not Authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/products')
+  })
+}
 
 
 export {
@@ -152,4 +197,6 @@ export {
   deleteComment,
   edit,
   update,
+  editComment,
+  updateComment,
 }

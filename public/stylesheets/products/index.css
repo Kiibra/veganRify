@@ -1,3 +1,7 @@
+body {
+  /* background-image: url(https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDZ8fHxlbnwwfHx8fHw%3D);
+  background-size: cover; */
+}
 .product-card {
   border: 3px solid rgb(180, 175, 174);
   padding: 16px;

@@ -1,74 +1,80 @@
-main {
+/* main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100%; 
+} */
+
+img {
+  border-radius: 20px;
 }
 
-h5 {
-  font-size: 12px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 400;
-  color: white;
-  background-color: #d3465b;
-  border-radius: 12px;
-  margin-top: 6vh;
-  text-align: center;
-  padding: 4px;
-  width: 62px;
-  height: 22px;
-}
-
-.about{
+.welcome{
+  color: #2eae9f;
+  font-size: 20px;
   float: left;
-  font-size: 14px;
-  text-align: start;
-  justify-content: start;
-  margin-bottom: 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 20px;
+  /* margin-right: 98vh; */
 }
 
-.about-paragraph {
-  height: 12vh;
-  width: 58vh;
-  margin-right: 60vh;
-  color: rgb(11, 11, 11);
-} 
-
-.welcome {
-  margin-right: 80vh;
-  margin-top: 30px;
-  font-size: 38px;
-  color: #2eae9f ;
-}
-
-.question {
+.instruction {
+  /* width: 50vh; */
   float: right;
-  margin-left: 96vh;
-  color:#2eae9f;
+  text-align: right;
+  padding-right: 20px;
+  margin-left: 86vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* flex-direction: row; */
+  align-content: flex-end;
+
+}
+.question{
+  color: #2eae9f;
+  font-size: 30px;
   margin-bottom: 4px;
 }
-
-
-.login-inst {
+.login-inst{
+  padding: 10px 5px 10px 5px;
   background-color: #c3cfd9;
-  padding: 10px;
   border-radius: 8px;
-  width: 44vh;
-  height: 8vh;
-  margin-top: 1px;
-  margin-left: 60%;
-  font-size: 16px;
-  font-weight: 400;
-  align-items: center;
-}
+  margin-top: 2px;
 
-h1{
-  font-size: 78px;
+}
+.title{
+  font-size: 68px;
   color: #e8833a;
   animation-duration: 3s;
-  margin-top: 14vh;
+  margin-top: 12vh;
   text-align: center;
+}
+
+.about {
+  width: 70vh;
+  float: left;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 40px;
+  margin-top: 14vh;
+}
+
+h5{
+  border-radius: 12px;
+  background-color: #d3465b;
+  color: white;
+  text-align: center;
+  width: 10vh;
+  font-weight: 500;
+  padding: 4px;
+}
+.abt-parag {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(16, 15, 15);
 }

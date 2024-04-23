@@ -20,7 +20,7 @@
 
   <form action="/products/<%= product._id %>/comments" method="POST">
     <textarea type="text" name="content" placeholder="comment here..."></textarea>
-    <button class="comment-button" type="submit">Add Comment</button>
+    <button class="comment-button" type="submit">💬</button>
   </form>
 
   <% if (product.comments.length) { %>
@@ -30,11 +30,11 @@
       <li>
         <%= comment.content %> - <%= comment.author.name%>
         <% if (comment.author._id.equals(user.profile._id)) { %>
-          <form action="/products/<%= comment._id %>?_method=DELETE" method="POST">
+          <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
             <button class="delete-comment-button" type="submit">X</button>
           </form>
-          
-        <% } %>
+          <a href="/products/<%= product._id %>/comments/<%= comment._id %>/edit"><button>Update Comment</button></a>
+          <% } %>
       </li>
       <% }) %>
     </ul>
