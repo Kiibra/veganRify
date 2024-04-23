@@ -1,61 +1,72 @@
-body {
-  /* background-image: url(https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDZ8fHxlbnwwfHx8fHw%3D);
-  background-size: cover; */
+
+h2 {
+  text-align: center;
 }
+
+.inst-search {
+  float: left;
+  align-content: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 8px;
+  padding: 10px 20px 20px 20px;
+  background-color: #c3cfd9;
+  border-radius: 2vh;
+}
+
 .product-card {
   border: 3px solid rgb(180, 175, 174);
   padding: 16px;
-  border-radius: 32px;
-  margin-bottom: 28px;
-  width: 30%;
-  height: 25%;
-  align-items: center;
-  justify-content:space-around;
-  display: inline-block;
-  text-align: center;
+  border-radius: 16px;
+  margin-left: 10px;
+  max-width: 26vh;
+  max-height: 32vh;
+  align-items:flex-start;
+  align-content: flex-start;
+  justify-content:space-between;
+  /* text-align: center; */
   flex-wrap: wrap;
-  display: inline-block;
+  float: left;
 }
-
-.products-container{
-flex-wrap: wrap;
-display: inline-block;
-/* width: 50%; */
-}
-
 img {
-height: 70%;
-width: 65%;
-border-radius: 6px;
-margin-right: 30px;
+  max-width: 40vh;
+  max-height: 14vh;
 }
 
-.button-action{
+h4{
+  font-size: 8px;
+}
+.products-container{
+  float: left;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  justify-content: space-around;
+}
+
+
+.btn-action{
   display: flex;
-  flex-direction: column;
-  padding: 10px;
-  justify-content: space-evenly;
   align-content: flex-end;
+  font-size: 10px;
+  /* flex-wrap: wrap; */
 }
-
-.delete-button {
-  background-color: #c3465b;
-  width: 75px;
-  height: 28px;
-  font-size: 15px;
+.edit-btn {
+  float: left;
 }
-.details-button {
+.delete-btn {
+  background-color: #d3465b;
+  margin-left: 2px;
+}
+.details-btn {
   background-color: rgb(148, 184, 218);
-  /* margin-left: 10px; */
-  margin-top: 10px;
-  width: 75px;
-  height: 28px;
-  font-size: 15px;
+  margin-left: 10px;
+  float: right;
 }
 
 .description-p {
   display: flex;
-  font-family: 10px;
-  color: #d3465b;
-  text-align: right;
+  font-size: 10px;
+  color: #151414;
+  text-align: left;
+  flex-wrap: wrap;
 } 

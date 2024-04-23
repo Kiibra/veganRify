@@ -3,26 +3,28 @@
 <%- include('../partials/nav') %>
 
 <title><%= title %></title>
-<h2>All Products</h2>
+<h2 class="title">All Products</h2>
+
+<p class="inst-search"> Search for your product to see if it has been veganRify! </p>
 
 <div class="products-container">
   <ul>
     <% products.forEach(product => { %>
         <div class="product-card">
-          <p><img src="<%= product.imageLink %>" alt="product image for post"></p>
-          <h4><%= product.mealName %> - Posted by <%= product.author.name %></h4>
-          <p class="description-p"><%= product.description %></p>
-          <div class="button-action">
+          <img src="<%= product.imageLink %>" alt="product image for post">
+          <h4> MealName: <%= product.mealName %> <br> - Posted by <%= product.author.name %></h4>
+          <p class="description-p"> Description: <%= product.description %></p>
+          <div class="btn-action">
             <% if (product.author._id.equals(user.profile._id)) { %>
+              <a href="/products/<%= product._id %>/edit"><button class="edit-btn">Edit</button></a>
               <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-                <button class="delete-button">Delete</button>
+                <button class="delete-btn">Delete</button>
               </form>
-              <a href="/products/<%= product._id %>/edit"><button class="edit-button">Edit</button></a>
               <% } %>
-              <a href="/products/<%= product._id %>"><button class="details-button">Details</button></a>
+              <a href="/products/<%= product._id %>"><button class="details-btn">Details</button></a>
             </div>
         </div>
     <% }) %>
-</ul>
+  </ul>
 </div>
 <%- include('../partials/footer') %>

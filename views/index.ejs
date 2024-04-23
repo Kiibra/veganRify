@@ -1,15 +1,15 @@
 <%- include('./partials/html-head') %>
-<link rel="stylesheet" href="/stylesheets/index.css">
+<link rel="stylesheet" href="/stylesheets/landings/index.css">
 <!-- <link rel="assets" href="/assets/images/index-image.png"> -->
 <%- include('./partials/nav') %>
 
-<main>
+<section>
   <div class="welcome" >
     <h2 class="wlc">WELCOME!!! <%= user ? user.profile.name : "" %></h1>
   </div>
   <% if (user?.profile.avatar) { %>
     <div class="avatar">
-      <img
+      <img class="user"
         src="<%= user.profile.avatar %>"
         alt="<%= user.profile.name%>  avatar" 
       />
@@ -26,6 +26,6 @@
       <p class="abt-parag"> VeganRify is an app you can find the answers to your questions about a meal or snack, check if it's vegan or not, share some of your own tasty vegan favs, and explore others favorite vegan delights!</p>
     </div>
   <% } %>
-</main>
+  </section>
 
 <%- include('./partials/footer') %>
