@@ -3,14 +3,17 @@
 <%- include('../partials/nav') %>
 
 <section> 
-  <h1>Edit your Comment</h1>
+  <h1>Edit Comment! </h1>
   <div class="comment-form">
+
     <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
-      <textarea type="text" name="content" placeholder="comment here..." value="<%= product.comment.content %>"></textarea>
-      <button class="comment-button" type="submit">Add Comment</button>
+      <label>
+        Content: 
+      <textarea name="content" autocomplete="off" placeholder="comment here..." value="<%= comment.content %>"><%= comment.content %></textarea>
+    </label>
+      <button class="comment-button" type="submit">Update Comment</button>
     </form>
   </div>
-
 </section>
 
 <%- include('../partials/footer') %>

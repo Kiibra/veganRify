@@ -55,19 +55,6 @@ function create(req, res){
   })
 }
 
-function deleteProduct(req, res){
-  // req.body.author = req.user.profile._id
-  Product.findByIdAndDelete(req.params.productId)
-  .then(product => {
-    if (product.author._id.equals(req.user.profile._id)){
-    res.redirect('/products')
-    }
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/')
-  })
-}
 function show(req, res){
   // find the product by it's _id
   Product.findById(req.params.productId)
@@ -84,6 +71,31 @@ function show(req, res){
   .catch(err => {
     console.log(err)
     res.redirect('/')
+  })
+}
+
+function deleteProduct(req, res){
+  // req.body.author = req.user.profile._id
+  Product.findByIdAndDelete(req.params.productId)
+  .then(product => {
+    if (product.author._id.equals(req.user.profile._id)){
+    res.redirect('/products')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+function update (req, res){
+  Product.findByIdAndUpdate(req.params.productId, req.body, {new: true})
+  .then(product => {
+    // redirect to show view
+    res.redirect(`/products/${product._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/products')
   })
 }
 
@@ -129,30 +141,19 @@ function deleteComment(req, res){
   })
 }
 
-function update (req, res){
-  Product.findByIdAndUpdate(req.params.productId, req.body, {new: true})
-  .then(product => {
-    // redirect to show view
-    res.redirect(`/products/${product._id}`)
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect('/products')
-  })
-}
 
 function editComment (req, res){
   Product.findById(req.params.productId)
   .then(product => {
-    const comment = product.comments._id(req.params.commentId)
+    const comment = product.comments.id(req.params.commentId)
     if(comment.author.equals(req.user.profile._id)) {
-      res.render('product/editComment', {
+      res.render('products/editComment', {
         product,
         comment,
         title: 'Update Comment'
       })
     }else{
-      throw new Error('Not Authorized')
+      throw new Error('Action Not Authorized')
     }
   })
   .catch(err => {
@@ -165,7 +166,7 @@ function editComment (req, res){
 function updateComment(req, res){
   Product.findById(req.params.productId)
   .then(product => {
-    const comment = product.comments._id(req.params.commentId)
+    const comment = product.comments.id(req.params.commentId)
     if (comment.author.equals(req.user.profile._id)) {
       comment.set(req.body)
       product.save()
