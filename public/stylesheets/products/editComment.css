@@ -1,5 +1,8 @@
 body {
-  /* background-image: url("/assets/images/show-image.png"); */
+  background-image: url("/assets/images/editCom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: right; */
 }
 
 h1{

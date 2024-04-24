@@ -9,24 +9,19 @@
 <article class="scroller">
   <section>
     <div class="products-container">
-      <ul>
-        <% products.forEach(product => { %>
-          <div class="product-card">
-            <img src="<%= product.imageLink %>" alt="product image for post">
-            <h4> MealName: <%= product.mealName %> <br> - Posted by <%= product.author.name %></h4>
-            <p class="description-p"> Description: <%= product.description %></p>
-            <div class="btn-action">
-              <% if (product.author._id.equals(user.profile._id)) { %>
-                <a href="/products/<%= product._id %>/edit"><button class="edit-btn">Edit</button></a>
-                <!-- <form action="/products/<%= product._id%>?_method=DELETE" method="POST">
-                  <button class="delete-btn">Delete</button> -->
-                </form>
-                <% } %>
-                <a href="/products/<%= product._id %>"><button class="details-btn">Details</button></a>
-            </div>
+      <% products.forEach(product => { %>
+        <div class="product-card">
+          <img src="<%= product.imageLink %>" alt="product image for post">
+          <h4> MealName: <%= product.mealName %> <br> - Posted by <%= product.author.name %></h4>
+          <p class="description-p"> Description: <%= product.description %></p>
+          <div class="btn-action">
+            <% if (product.author._id.equals(user.profile._id)) { %>
+              <a href="/products/<%= product._id %>/edit"><button class="edit-btn">Edit</button></a>
+              <% } %>
+              <a href="/products/<%= product._id %>"><button class="details-btn">Details</button></a>
           </div>
-        <% }) %>
-      </ul>
+        </div>
+      <% }) %>
     </div>
   </section>
 </article>

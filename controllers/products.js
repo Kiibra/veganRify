@@ -121,10 +121,10 @@ function createComment(req, res){
 
 function deleteComment(req, res){
   // find the specific product by id 
-  Product.findById(req.params.commentsId)
+  Product.findById(req.params.productId)
   .then(product => {
     // then find the specific comment by id and remove it
-    product.comments.remove({_id: req.params.commentsId})
+    product.comments.remove({_id: req.params.commentId})
     product.save()
     .then(() => {
     // redirect to the product id where the comment existed

@@ -27,7 +27,7 @@ router.get('/:productId', isLoggedIn, productsCtrl.show)
 router.post('/:productId/comments', isLoggedIn, productsCtrl.createComment)
 
 // DELETE localhost:3000/:productsId/comments/:commentId
-router.delete('/:productsId', isLoggedIn, productsCtrl.deleteComment)
+router.delete('/:productsId/comments/:commentId', isLoggedIn, productsCtrl.deleteComment)
 
 // PUT localhost:3000/product/:productId
 router.put('/:productId', isLoggedIn, productsCtrl.update)

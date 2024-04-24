@@ -4,8 +4,10 @@ body{
   background-repeat: no-repeat;
   background-position: right;
   background-color: #edc346;
+  /* display: flex; */
   /* float: right; */
   height: 100vh;
+  justify-content: center;
   /* width: 100vh; */
 }
 
@@ -38,37 +40,38 @@ h2 {
   border: 3px solid rgb(180, 175, 174);
   background-color: rgb(230, 230, 225);
   padding: 16px;
+  display: flex;
   border-radius: 16px;
+  flex-direction: column;
+
   margin-left: 10px;
-  max-width: 18vh;
-  max-height: 24vh;
-  align-items:flex-start;
-  justify-content: column;
+  width: 200px;
+  height: 300px;
+  align-items:center;
   flex-wrap: wrap;
-  /* float: left; */
   margin-bottom: 10px;
 }
 
 img {
-  max-width: 20vh;
-  max-height: 8vh;
+  width: 8vh;
+  /* max-height: 8vh; */
 }
 
 h4{
   font-size: 8px;
 }
 .products-container{
-  float: left;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(245, 179, 12); */
   flex-wrap: wrap;
   margin-top: 4px;
-  justify-content: space-between;
-  width: 60%;
-  /* height: 100%; */
+  width: 46%;
 }
 
 .btn-action{
   display: flex;
-  align-content: flex-end;
+  /* align-content: flex-end; */
   font-size: 10px;
 }
 .edit-btn {
@@ -82,8 +85,8 @@ h4{
 }
 .details-btn {
   background-color: rgb(148, 184, 218);
-  margin-left: 10px;
-  float: right;
+  /* margin-left: 10px; */
+  /* float: right; */
   cursor: pointer;
 }
 
