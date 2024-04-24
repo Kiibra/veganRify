@@ -3,8 +3,8 @@ h2 {
 }
 
 .scroller{
-  height: 600px;
-  overflow: auto;
+  height: 630px;
+  overflow-y: auto;
   scroll-snap-type: y mandatory;
 }
 /* ::-webkit-scrollbar{
@@ -12,7 +12,15 @@ h2 {
 } */
 
 .scroller section{
-  /* scroll-snap-align: x; */
+  /* scroll-snap-align: both; */
+}
+.search-inst{
+  padding: 10px 5px 10px 5px;
+  background-color: #c3cfd9;
+  border-radius: 6px;
+  margin-top: 2px;
+  width: 46vh;
+  margin-left: 6px;
 }
 
 .product-card {
