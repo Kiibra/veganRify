@@ -5,7 +5,7 @@
 *** 
 ### `Description:`
 ##### 
-VeganRify🥑. The app where you can find the answers to your questions and wonders about your a meals or snacks. Your go to app to check if a product is vegan or not. Where you can also share your own tasty vegan favorites with your communities and explore other's favorite vegan delights you can add to your lists of must try😋!
+VeganRify🥑. The app where you can find the answers to your questions and wonders about your a meals or snacks. Your go to app to check if a product is vegan or not. Where you can also share your own tasty vegan favorites with your friends and explore other's favorite vegan delights you can add to your lists of must trys!!
 
 ***
 
