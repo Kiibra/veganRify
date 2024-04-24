@@ -119,28 +119,24 @@ function createComment(req, res){
   })
 }
 
-function deleteComment(req, res){
-  // find the specific product by id 
+function deleteComment(req, res) {
   Product.findById(req.params.productId)
   .then(product => {
-    // then find the specific comment by id and remove it
     product.comments.remove({_id: req.params.commentId})
     product.save()
     .then(() => {
-    // redirect to the product id where the comment existed
-    res.redirect(`/products/${product._id}`)
-  })
+      res.redirect(`/products/${product._id}`)
+    })
     .catch(err => {
-    console.log(err)
-    res.redirect('/')
-  })
+      console.log(err)
+      res.redirect('/')
+    })
   })
   .catch(err => {
     console.log(err)
     res.redirect('/')
   })
 }
-
 
 function editComment (req, res){
   Product.findById(req.params.productId)
