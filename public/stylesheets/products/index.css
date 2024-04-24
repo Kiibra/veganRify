@@ -2,17 +2,14 @@ h2 {
   text-align: center;
 }
 
-.search-inst {
-  float: left;
-  align-content: center;
-  text-align: center;
-  margin-left: 10px;
-  margin-top: 8px;
-  padding: 10px 20px 20px 20px;
-  background-color: #c3cfd9;
-  border-radius: 8px;
+.scroller{
+  height: 600px;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
-
+.scroller section{
+  /* scroll-snap-align: x; */
+}
 .product-card {
   border: 3px solid rgb(180, 175, 174);
   background-color: rgb(230, 230, 225);
@@ -41,6 +38,8 @@ h4{
   flex-wrap: wrap;
   margin-top: 4px;
   justify-content: space-between;
+  width: 60%;
+  /* height: 100%; */
 }
 
 .btn-action{
