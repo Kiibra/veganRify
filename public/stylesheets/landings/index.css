@@ -46,11 +46,12 @@ section {
   margin-top: 2px;
 
 }
-.title{
-  font-size: 68px;
+#title{
+  font-size: 52px;
   color: #e8833a;
   margin-top: 12vh;
   text-align: center;
+  animation-duration: 2s;
 }
 
 .about {
