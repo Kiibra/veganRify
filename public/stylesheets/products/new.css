@@ -3,8 +3,8 @@
   background-color: rgb(230, 230, 225);
   padding: 16px;
   border-radius: 18px;
-  width: 40vh;
-  height: 50vh;
+  width: 46vh;
+  height: 60vh;
   margin: 0 auto;
   flex-direction: column;
   margin-right: 30vh;
@@ -24,10 +24,10 @@ label{
   margin-top: 120px;
   background-color:#207867;
   color: white;
-  margin-left: 24vh;
+  margin-left: 26vh;
 }
 
 h2 {
   text-align: center;
-  margin-left: 24vh;
+  margin-left: 40vh;
 }

@@ -35,7 +35,6 @@ router.put('/:productId', isLoggedIn, productsCtrl.update)
 // PUT localhost:3000/:productId/comments/:commnetId
 router.put('/:productId/comments/:commentId', isLoggedIn, productsCtrl.updateComment)
 
-
 router.get('/:productId/comments/:commentId/edit', isLoggedIn, productsCtrl.editComment)
 
 
