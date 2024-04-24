@@ -7,11 +7,14 @@
   <div class="comment-form">
 
     <form action="/products/<%= product._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+      <img src="<%= product.imageLink %>" alt="product image for post">
+      <h3><%= product.mealName %></h3>
+      <p class="comment-desc"><%= product.description %></p>
       <label>
-        Content: 
-      <textarea name="content" autocomplete="off" placeholder="comment here..." value="<%= comment.content %>"><%= comment.content %></textarea>
-    </label>
-      <button class="comment-button" type="submit">Update Comment</button>
+        Comment: 
+      </label>
+      <textarea name="content" autocomplete="off" placeholder="comment here..." cols="20" rows="3" value="<%= comment.content %>"><%= comment.content %></textarea>
+      <button class="update-btn" type="submit">Update Comment</button>
     </form>
   </div>
 </section>

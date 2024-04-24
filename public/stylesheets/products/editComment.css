@@ -1,3 +1,46 @@
-/* .comment-form{
-  font-size: 10px;
-} */
+h1{
+  /* align-items: center; */
+  text-align: center;
+}
+
+h3{
+  /* text-align: left; */
+  margin-right: 20vh;
+}
+.comment-form {
+  border: 3px solid rgb(180, 175, 174);
+  background-color: rgb(230, 230, 225);
+  padding: 6px;
+  border-radius: 18px;
+  width: 50vh;
+  height: 60vh;
+  margin: 0 auto;
+  text-align: center;
+  align-content: center;
+}
+textarea {
+  width: 35vh;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+label{
+  /* align-items: center; */
+  font-weight: 500;
+}
+.update-btn {
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 6vh;
+  background-color:#207867;
+  color: white;
+  margin-left: 24vh;
+}
+
+img {
+  height: 25vh;
+  width: 35vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  }
