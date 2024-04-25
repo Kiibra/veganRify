@@ -1,22 +1,21 @@
 
 .new-body {
   display: flex;
-  justify-content: space-around;
-  height: 100vh; /* Cover the entire viewport height */
+  height: 100vh; 
 }
 
 .image-half {
   background-image: url("/assets/images/new-image.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
   background-size: cover;
-  height: 100vh; /* Take up the entire viewport height */
-  width: 50%; /* Take up half of the available width */
+  height: 100vh; 
+  width: 50%;
 }
 
 .product-half {
-  height: 100vh; /* Take up the entire viewport height */
-  width: 50%; /* Take up half of the available width */
+  height: 100%; 
+  width: 50%;
   background-color: 
   #6bd0e9;
 }
@@ -26,15 +25,15 @@
   background-color: rgb(230, 230, 225);
   padding: 18px;
   border-radius: 18px;
-  width: 44vh;
-  height: 50vh;
+  width: 400px;
+  height: 480px;
   margin: 0 auto;
   flex-direction: column;
 }
 
 input, textarea {
   margin-bottom: 40px;
-  width: 36vh;
+  width: 350px;
 }
 
 label {

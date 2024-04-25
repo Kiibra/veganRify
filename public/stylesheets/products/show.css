@@ -2,7 +2,6 @@ body{
   background-image: url("/assets/images/show-image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
 }
 
 h2{
@@ -11,13 +10,15 @@ h2{
 
 .product-container {
   border: 2px solid rgb(188, 181, 178);
-  background-color: beige;
-  /* display: flex; */
-  flex-direction: row;
+  background-color: rgb(230, 230, 225);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   border-radius: 16px;
   width: 30%;
   margin: 0 auto;
+  margin-right: 200px;
   margin-top: 4px;
 }
 
@@ -25,61 +26,47 @@ h2{
   padding: 16px;
   display: flex;
   border-radius: 16px;
-  flex-direction: column;
-
-  margin-left: 10px;
   width: 300px;
-  height: 400px;
+  height: 280px;
+  flex-direction: column;
   align-items:center;
-  flex-wrap: wrap;
-  /* margin-bottom: 10px; */
 }
-
 .comment-input{
   display: flex;
-  margin-left: 10px;
 }
 .comments-head{
   font-size: 15px;
   font-weight: 600;
   margin-left: 8px;
 }
-
 .comment-btns{
   display: flex;
   align-items: flex-end;
   cursor: pointer;
 }
-
 ul {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 h3{
   font-size: 12px;
 }
-
 .comment-desc {
-  font-size: 12px;
+  font-size: 13px;
   color: #382124;
   text-align: start;
 }
-
 .no-comments{
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
 }
-
 img {
-/* height: 22vh; */
-width: 18vh;
+height: 22vh;
 
 }
-
 .submit-comment-btn{
-  width: 10vh;
-  height: 3vh;
+  align-items: center;
   display: flex;
   margin-left: 10px;
   cursor: pointer;
@@ -100,7 +87,6 @@ width: 18vh;
   display: flex;
   cursor: pointer;
 }
-
 .edit-comment-btn{
   font-size: 10px;
   width: 4vh;
