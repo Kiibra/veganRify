@@ -16,7 +16,7 @@ h2{
   align-items: center;
   flex-wrap: wrap;
   border-radius: 16px;
-  width: 30%;
+  width: 40vh;
   margin: 0 auto;
   margin-right: 200px;
   margin-top: 4px;
@@ -32,19 +32,23 @@ h2{
   align-items:center;
   margin-top: 8px;
 }
+
 .comment-input{
   display: flex;
 }
+
 .comments-head{
   font-size: 15px;
   font-weight: 600;
   margin-left: 8px;
 }
+
 .comment-btns{
   display: flex;
   align-items: flex-end;
   cursor: pointer;
 }
+
 ul {
   font-size: 12px;
 }
@@ -52,25 +56,30 @@ ul {
 h3{
   font-size: 12px;
 }
+
 .comment-desc {
   font-size: 13px;
   color: #382124;
   text-align: start;
 }
+
 .no-comments{
   font-size: 16px;
   font-weight: 500;
   margin-left: 10px;
 }
+
 img {
-  height: 14vh;
+  height: 18vh;
 }
+
 .submit-comment-btn{
   align-items: center;
   display: flex;
   margin-left: 10px;
   cursor: pointer;
 }
+
 .delete-comment-btn {
   background-color: #8f172d;
   color:beige;
@@ -80,6 +89,7 @@ img {
   border: 0px;
   cursor: pointer;
 }
+
 .delete-btn {
   background-color: #b32238;
   color:rgb(243, 243, 243);
@@ -88,9 +98,10 @@ img {
   display: flex;
   cursor: pointer;
 }
+
 .edit-comment-btn{
   font-size: 10px;
-  width: 4vh;
+  /* width: 4vh; */
   margin-left: 6px;
   cursor: pointer;
 }

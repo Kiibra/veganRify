@@ -8,10 +8,10 @@
   background-repeat: no-repeat;
   background-position: right;
   width: 50%;
-  height: 845px;
+  height: 100vh;
 }
 .product-half {
-  height: 845px;
+  height: 100vh;
   width: 50%;
   background-color: #edc346;
 }
@@ -19,10 +19,12 @@ h2 {
   text-align: center;
 }
 .scroller {
-  height: 600px;
+  height: 90vh;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 4px;
@@ -42,22 +44,22 @@ h2 {
   display: flex;
   border-radius: 16px;
   flex-direction: column;
-
+  justify-content: space-between;
   margin-left: 10px;
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 400px;
   align-items:center;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
 img {
-  height: 14vh;
+  height: 100px;
   border-radius: 6px;
 }
 
 h4{
-  font-size: 8px;
+  font-size: 16px;
 }
 
 .btn-action{
