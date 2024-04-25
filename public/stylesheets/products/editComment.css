@@ -2,16 +2,13 @@ body {
   background-image: url("/assets/images/editCom.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: right; */
 }
 
 h1{
-  /* align-items: center; */
   text-align: center;
 }
 
 h3{
-  /* text-align: left; */
   margin-right: 20vh;
 }
 .comment-form {
@@ -32,7 +29,6 @@ textarea {
 }
 
 label{
-  /* align-items: center; */
   font-weight: 500;
 }
 .update-btn {

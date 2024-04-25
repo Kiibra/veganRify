@@ -2,7 +2,6 @@ body {
   background-image: url("/assets/images/edit-image.png");
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: right; */
   height: 100%;
 }
 
@@ -15,7 +14,6 @@ body {
   height: 50vh;
   margin: 0 auto;
   flex-direction: column;
-  /* margin-right: 30vh; */
   margin-top: 10vh;
 }
 
@@ -25,7 +23,6 @@ input, textarea {
 }
 
 label{
-  /* margin-bottom: 60px; */
   font-weight: 500;
   font-size: 16px;
 }
