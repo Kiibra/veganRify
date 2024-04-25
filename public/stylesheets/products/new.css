@@ -1,23 +1,24 @@
 
 .new-body {
   display: flex;
-  height: 100vh; 
-}
+  justify-content: space-around;
 
+}
+/* body{
+  background-color:#2ea8ce;
+} */
 .image-half {
   background-image: url("/assets/images/new-image.png");
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
   background-size: cover;
-  height: 100vh; 
+  height: 825px; 
   width: 50%;
 }
 
 .product-half {
-  height: 100%; 
+  height: 825px; 
   width: 50%;
-  background-color: 
-  #6bd0e9;
 }
 
 .form-container {

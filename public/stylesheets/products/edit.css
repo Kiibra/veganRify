@@ -1,8 +1,8 @@
 body {
   background-image: url("/assets/images/edit-image.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+  /* background-repeat: no-repeat; */
+  height: 100vh;
 }
 
 .form-container {

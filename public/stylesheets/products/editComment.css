@@ -1,7 +1,10 @@
 body {
-  background-image: url("/assets/images/editCom.png");
   background-size: cover;
+  /* background-image: url("/assets/images/editCom.png"); */
+  background-image: url("/assets/images/editComm.png");
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 h1{

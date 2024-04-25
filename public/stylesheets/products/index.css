@@ -8,21 +8,18 @@
   background-repeat: no-repeat;
   background-position: right;
   width: 50%;
-  height: 100vh;
+  height: 845px;
 }
-
 .product-half {
-  height: 46%vh;
+  height: 845px;
   width: 50%;
   background-color: #edc346;
 }
-
 h2 {
   text-align: center;
 }
-
-.scroller{
-  height: 550px;
+.scroller {
+  height: 600px;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   display: flex;
@@ -30,8 +27,7 @@ h2 {
   flex-wrap: wrap;
   margin-top: 4px;
 }
-
-.search-inst{
+.search-inst {
   padding: 10px 5px 10px 5px;
   background-color: #c3cfd9;
   border-radius: 6px;
@@ -39,7 +35,6 @@ h2 {
   width: 46vh;
   margin-left: 6px;
 }
-
 .product-card {
   border: 2px solid rgb(180, 175, 174);
   background-color: rgb(230, 230, 225);
@@ -58,6 +53,7 @@ h2 {
 
 img {
   height: 14vh;
+  border-radius: 6px;
 }
 
 h4{

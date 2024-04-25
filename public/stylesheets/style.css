@@ -1,19 +1,21 @@
 html {
   box-sizing: border-box;
 }
+nav > a {
+  display: block;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto; 
+} 
 
-/* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
+*,
+*::before, 
 *::after {
-  /* All ::after pseudo-elements */
-  /* height & width will now include border & padding by default but can be overridden as needed */
   box-sizing: inherit;
 }
 
 body {
-  background-color: #fbe192;
-  /* background-image: url("/assets/images/show-image.png"); */
+  background-color:#fbe192;
   color: #312e2e;
   font-family: system-ui, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 
   'Helvetica Neue', sans-serif;
@@ -29,13 +31,11 @@ nav {
   align-items: center;
   padding: 10px;
   min-height: 60px;
-  /* width: 100%; */
 }
 
 main {
-  /* display: flex;  */
+  display: flex; 
   align-items: center; 
-  flex-direction: center;
   justify-content: center;
 }
 
@@ -43,11 +43,6 @@ main {
   margin: 0 auto;
 }
 
-nav > a {
-  display: block;
-  text-align: center;
-  margin-left: 20px;
-} 
 a:hover {
   /* letter-spacing: 0.2em;   */
   transform: scale(1.2);
@@ -57,3 +52,7 @@ a:hover {
   border-radius: 8px;
   justify-content: flex-start;
 }  */
+#first-nav{
+  /* margin-left: 200px; */
+  margin: 0;
+}

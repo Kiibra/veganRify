@@ -10,7 +10,7 @@ h2{
 
 .product-container {
   border: 2px solid rgb(188, 181, 178);
-  background-color: rgb(230, 230, 225);
+  background-color: #e6e6e1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,9 +27,10 @@ h2{
   display: flex;
   border-radius: 16px;
   width: 300px;
-  height: 380px;
+  height: 300px;
   flex-direction: column;
   align-items:center;
+  margin-top: 8px;
 }
 .comment-input{
   display: flex;
@@ -62,8 +63,7 @@ h3{
   margin-left: 10px;
 }
 img {
-height: 22vh;
-
+  height: 14vh;
 }
 .submit-comment-btn{
   align-items: center;
@@ -72,7 +72,7 @@ height: 22vh;
   cursor: pointer;
 }
 .delete-comment-btn {
-  background-color: #d3465b;
+  background-color: #8f172d;
   color:beige;
   width: 2vh;
   height: 2vh;
@@ -81,8 +81,9 @@ height: 22vh;
   cursor: pointer;
 }
 .delete-btn {
-  background-color: #d3465b;
-  color:beige;
+  background-color: #b32238;
+  color:rgb(243, 243, 243);
+  border: none;
   margin-left: 2px;
   display: flex;
   cursor: pointer;
