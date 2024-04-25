@@ -12,24 +12,27 @@ h2{
 .product-container {
   border: 2px solid rgb(188, 181, 178);
   background-color: beige;
-  border-radius: 18px;
-  width: 46vh;
-  height: 50vh;
-  /* margin-right: 28vh; */
-  /* float: right; */
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 16px;
+  width: 30%;
   margin: 0 auto;
-  align-content: center;
-  /* text-align: center; */
+  margin-top: 4px;
 }
 
 .product-card{
-  padding: 6px;
+  padding: 16px;
+  display: flex;
   border-radius: 16px;
-  max-width: 26vh;
-  max-height: 32vh;
-  /* align-items: center;
-  text-align: center; */
-  align-content: center;
+  flex-direction: column;
+
+  margin-left: 10px;
+  width: 300px;
+  height: 400px;
+  align-items:center;
+  flex-wrap: wrap;
+  /* margin-bottom: 10px; */
 }
 
 .comment-input{
@@ -44,9 +47,7 @@ h2{
 
 .comment-btns{
   display: flex;
-  justify-content: flex-start;
   align-items: flex-end;
-  margin-top: 0;
   cursor: pointer;
 }
 
@@ -71,11 +72,9 @@ h3{
 }
 
 img {
-height: 22vh;
-width: 28vh;
-justify-content: center;
-align-content: center;
-align-items: center;
+/* height: 22vh; */
+width: 18vh;
+
 }
 
 .submit-comment-btn{

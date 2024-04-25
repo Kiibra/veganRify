@@ -3,12 +3,14 @@
 <%- include('../partials/nav') %>
 
 <title><%= title %></title>
-<h2 class="title">All Products</h2>
 
-<p class="search-inst"> Search for your product to see if it has been veganRify! </p>
-<article class="scroller">
-  <section>
-    <div class="products-container">
+<div class="index-body">
+  
+  <div class="product-half">
+    <h2 class="title">All Products</h2>
+    
+    <p class="search-inst"> Search for your product to see if it has been veganRify! </p>
+    <article class="scroller">
       <% products.forEach(product => { %>
         <div class="product-card">
           <img src="<%= product.imageLink %>" alt="product image for post">
@@ -19,10 +21,15 @@
               <a href="/products/<%= product._id %>/edit"><button class="edit-btn">Edit</button></a>
               <% } %>
               <a href="/products/<%= product._id %>"><button class="details-btn">Details</button></a>
+            </div>
           </div>
-        </div>
-      <% }) %>
-    </div>
-  </section>
-</article>
+          <% }) %>
+    </article>
+  </div>
+      
+  <div class="image-half">
+
+  </div>
+</div>
+
 <%- include('../partials/footer') %>
