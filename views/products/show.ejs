@@ -3,10 +3,8 @@
 <%- include('../partials/nav') %>
 
 <title><%= title %></title>
-
-<!-- <h2>Product Detail</h2> -->
+<h2>Product Detail</h2>
 <div class="product-container">
-
   <div class="product-card">
     <img src="<%= product.imageLink %>" alt="product image for post">
     <h3><%= product.mealName %> - Posted by <%= product.author.name %></h3>
@@ -36,12 +34,13 @@
             </form>
             <a href="/products/<%= product._id %>/comments/<%= comment._id %>/edit"><button class="edit-comment-btn">Edit</button></a>
           </div>
-          <% } %>
-        </li>
-        <% }) %>
-      </ul>
-    <% } else {%>
-        <p class="no-comments">Comments will appear here:</p>
         <% } %>
+      </li>
+      <% }) %>
+    </ul>
+    <% } else {%>
+      <p class="no-comments">Comments will appear here:</p>
+    <% } %>
 </div>
+
 <%- include('../partials/footer') %>

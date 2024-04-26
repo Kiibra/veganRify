@@ -5,12 +5,10 @@ section {
   justify-content: space-evenly;
 }
 #title{
-  /* font-size: 20px; */
   color: #fb5c12;
   animation-duration: 2s;
   margin-top: 20px;
   font-size: 52px;
-  /* margin-top: 20vh; */
   text-align: center;
   
 }
@@ -39,8 +37,6 @@ section {
   margin-top: 20px;
   margin-left: 70%;
   margin-right: 16px;
-  /* margin-bottom: ; */
-
 }
 
 .question{

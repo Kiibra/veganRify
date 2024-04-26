@@ -14,7 +14,6 @@ nav a {
   justify-content: space-evenly;
 } 
 
-
 *,
 *::before, 
 *::after {
@@ -52,24 +51,13 @@ main {
 }
 
 a:hover {
-  /* letter-spacing: 0.2em;   */
   transform: scale(1.2);
 }
-
-/* .avatar {
-  border-radius: 8px;
-  justify-content: flex-start;
-}  */
 
 .title{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   color: #e8833a;
-}
-
-#first-nav{
-  /* margin-left: 200px; */
-  /* margin: 0; */
 }
 
 button {
@@ -81,4 +69,5 @@ button {
   justify-content: center;
   cursor: pointer;
   margin-right: 10px;
+  text-decoration: none;
 }

@@ -12,8 +12,6 @@ const productSchema = new Schema({
   imageLink: String,
   description: String,
   author: {type: Schema.Types.ObjectId, ref: "Profile"},
-  // ingredients: ({ObjectId, ref: "Ingredient"}),
-  vegan: Boolean,
   comments: [commentSchema],
 }, {
   timestamps: true

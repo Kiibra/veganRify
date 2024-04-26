@@ -62,7 +62,8 @@ h2 {
 }
 
 img {
-  height: 100px;
+  height: 130px;
+  width: 120px;
   border-radius: 6px;
 }
 
@@ -76,17 +77,15 @@ h4{
 }
 .edit-btn {
   float: left;
-  cursor: pointer;
 }
 .delete-btn {
   background-color: #d3465b;
   margin-left: 2px;
-  cursor: pointer;
 }
 .details-btn {
   background-color: rgb(148, 184, 218);
   margin-left: 10px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .description-p {
