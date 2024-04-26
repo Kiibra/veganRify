@@ -12,6 +12,7 @@ nav a {
   margin: 0 auto; 
   text-decoration: none;
   justify-content: space-evenly;
+  font-weight: 500;
 } 
 
 *,
