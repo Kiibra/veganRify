@@ -1,15 +1,15 @@
-![](public/assets/veganRify.png)
+![](public/assets/images/screeanshot1.png)
 
 # VeganRify🥑
 
 *** 
 ### `Description:`
 ##### 
-VeganRify🥑. The app where you can find the answers to your questions and wonders about your a meals or snacks. Your go to app to check if a product is vegan or not. Where you can also share your own tasty vegan favorites with your friends and explore other's favorite vegan delights you can add to your lists of must trys!!
+VeganRify🥑. Discover ethical eating made easy with VeganRify – your ultimate companion for navigating the world of vegan foods! Seamlessly find verified plant-based delights and ensure every bite aligns with your values. As you embark on a journey of epicurean delight, utilize this cutting-edge vegan food verifying app. Check if your dish is vegan or not and share your own tasty vegan delights. Whether you're a seasoned vegan or simply exploring, VeganRify makes conscious dining a breeze. 
 
 ***
 
-### [Use App Here 🖥️](https://veganrify.fly.dev) 
+# [Use App Here 🖥️](https://veganrify.fly.dev) 
 ***
 
 ### `Technologies Used 💾`
@@ -22,6 +22,10 @@ VeganRify🥑. The app where you can find the answers to your questions and wond
 * ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
+|  Good OAuth   |Fly.io   |Whimsical  | Treallo
+| ------------- |:-------:| -----:|-- |
+
 ***
 ### `Materials🔖`
 ***
@@ -35,7 +39,7 @@ VeganRify🥑. The app where you can find the answers to your questions and wond
 ***
 ### `Ice Box🧊`
 *** 
-- [x] Implement a checkbox in new form to clarify if products are vegan.
-- [x] 
-- [x] Make it so a user can lookup for images of products rather than having to copy/paste image address.
-- [x] Add scan bar code function so users can lookup a product with by scanning the barcode.
+- [x] AAU, I should be able to  click somewhere and see only my posts
+- [x] AAU, I should be able to go to a page and see a list of profiles from every user that has created an account on the site
+- [x] AAU, I should be able to lookup for images of my products rather having to copy/paste image address.
+- [x] AAU or a guest, I want to have the option to scan the bar code of the item to check if it is vegan or not.
