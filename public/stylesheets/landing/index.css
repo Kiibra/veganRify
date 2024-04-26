@@ -5,7 +5,7 @@ section {
   justify-content: space-evenly;
 }
 #title{
-  color: #fb5c12;
+  color: #c8480c;
   animation-duration: 2s;
   margin-top: 20px;
   font-size: 52px;
@@ -60,7 +60,7 @@ section {
 }
 
 h5{
-  color: #5793c4;
+  color: #0a5da1;
   text-align: center;
   width: 10vh;
   margin-top: 16px;
