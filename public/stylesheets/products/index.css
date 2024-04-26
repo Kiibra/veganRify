@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
 } 
+
 .image-half {
   background-image: url("/assets/images/index-image.png");
   background-size: cover;
@@ -10,14 +11,18 @@
   width: 50%;
   height: 100vh;
 }
+
 .product-half {
   height: 100vh;
   width: 50%;
   background-color: #edc346;
 }
+
 h2 {
   text-align: center;
+  color:#c3cfd9;
 }
+
 .scroller {
   height: 90vh;
   overflow-y: auto;
@@ -29,18 +34,21 @@ h2 {
   flex-wrap: wrap;
   margin-top: 4px;
 }
+
 .search-inst {
   padding: 10px 5px 10px 5px;
   background-color: #c3cfd9;
   border-radius: 6px;
   margin-top: 2px;
   width: 46vh;
-  margin-left: 6px;
+  margin-left: 60px;
+  margin-top: 22px;
 }
+
 .product-card {
   border: 2px solid rgb(180, 175, 174);
   background-color: rgb(230, 230, 225);
-  padding: 16px;
+  padding: 18px;
   display: flex;
   border-radius: 16px;
   flex-direction: column;
@@ -83,7 +91,7 @@ h4{
 
 .description-p {
   display: flex;
-  font-size: 10px;
+  font-size: 14px;
   color: #151414;
   text-align: left;
 } 

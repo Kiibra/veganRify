@@ -10,27 +10,25 @@ h2{
 
 .product-container {
   border: 2px solid rgb(188, 181, 178);
-  background-color: #e6e6e1;
+  background-color: #c2e0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   border-radius: 16px;
-  width: 40vh;
+  width: 500px;
+  height: 700px;
   margin: 0 auto;
-  margin-right: 200px;
-  margin-top: 4px;
+  margin-top: 10vh;
 }
 
 .product-card{
   padding: 16px;
   display: flex;
   border-radius: 16px;
-  width: 300px;
-  height: 300px;
   flex-direction: column;
   align-items:center;
-  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 .comment-input{
@@ -45,8 +43,7 @@ h2{
 
 .comment-btns{
   display: flex;
-  align-items: flex-end;
-  cursor: pointer;
+  
 }
 
 ul {
@@ -54,7 +51,7 @@ ul {
 }
 
 h3{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .comment-desc {
@@ -70,7 +67,7 @@ h3{
 }
 
 img {
-  height: 18vh;
+  height: 200px;
 }
 
 .submit-comment-btn{
@@ -87,7 +84,6 @@ img {
   height: 2vh;
   font-size: 12px;
   border: 0px;
-  cursor: pointer;
 }
 
 .delete-btn {
@@ -96,12 +92,10 @@ img {
   border: none;
   margin-left: 2px;
   display: flex;
-  cursor: pointer;
 }
 
 .edit-comment-btn{
   font-size: 10px;
-  /* width: 4vh; */
-  margin-left: 6px;
-  cursor: pointer;
+  width: 2vh;
+  height: 2vh;
 }

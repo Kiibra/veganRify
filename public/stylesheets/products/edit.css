@@ -8,27 +8,28 @@ body {
 .form-container {
   border: 2px solid rgb(180, 175, 174);
   background-color: rgb(228, 238, 241);
-  padding: 20px;
+  display: flex;
+  padding: 18px;
   border-radius: 18px;
-  width: 44vh;
-  height: 50vh;
+  width: 540px;
+  height: 700px;
   margin: 0 auto;
-  flex-direction: column;
   margin-top: 10vh;
 }
 
 input, textarea {
   margin-bottom: 40px;
-  width: 36vh;
+  width: 50vh;
+  height: 30px;
 }
 
 label{
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
 }
 .save-meal-btn {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   background-color:#207867;
   color: white;
-  margin-left: 26vh;
+  float: right;
 }

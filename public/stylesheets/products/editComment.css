@@ -1,7 +1,7 @@
 body {
   background-size: cover;
-  /* background-image: url("/assets/images/editCom.png"); */
-  background-image: url("/assets/images/editComm.png");
+  background-image: url("/assets/images/editcom.png");
+  /* background-image: url("/assets/images/editComm.png"); */
   background-repeat: no-repeat;
   background-position: center;
 
@@ -15,12 +15,12 @@ h3{
   margin-right: 20vh;
 }
 .comment-form {
-  border: 3px solid rgb(180, 175, 174);
-  background-color: rgb(230, 230, 225);
+  border: 2px solid rgb(180, 175, 174);
+  background-color: #eff3f5;
   padding: 6px;
   border-radius: 18px;
   width: 50vh;
-  height: 60vh;
+  height: 66vh;
   margin: 0 auto;
   text-align: center;
   align-content: center;
