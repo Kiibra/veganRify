@@ -5,6 +5,7 @@
 *** 
 ### `Description:`
 ##### 
+
 VeganRify🥑. Discover ethical eating made easy with VeganRify – your ultimate companion for navigating the world of vegan foods! Seamlessly find verified plant-based delights and ensure every bite aligns with your values. As you embark on a journey of epicurean delight, utilize this cutting-edge vegan food verifying app. Check if your dish is vegan or not and share your own tasty vegan delights. Whether you're a seasoned vegan or simply exploring, VeganRify makes conscious dining a breeze. 
 
 ***
@@ -23,7 +24,7 @@ VeganRify🥑. Discover ethical eating made easy with VeganRify – your ultimat
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 * ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-|  Good OAuth   |Fly.io   |Whimsical  | Trello
+|  Google OAuth   |Fly.io   |Whimsical  | Trello
 | ------------- |:-------:| -----:|-- |
 
 ***
@@ -39,7 +40,7 @@ VeganRify🥑. Discover ethical eating made easy with VeganRify – your ultimat
 ***
 ### `Ice Box🧊`
 *** 
-- [x] AAU, I should be able to  click somewhere and see only my posts
-- [x] AAU, I should be able to go to a page and see a list of profiles from every user that has created an account on the site
-- [x] AAU, I should be able to lookup for images of my products rather having to copy/paste image address.
-- [x] AAU or a guest, I want to have the option to scan the bar code of the item to check if it is vegan or not.
+- [] AAU, I should be able to  click somewhere and see only my posts.
+- [] AAU, I should be able to go to a page and see a list of profiles fother users.
+- [] AAU, I should be able to lookup for images of my products rather having to copy/paste image address.
+- [] AAU or a guest, I want to have the option to scan the bar code of the item to check if it is vegan or not.
