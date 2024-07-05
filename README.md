@@ -1,4 +1,4 @@
-![](public/assets/images/screeanshot1.png)
+![](public/assets/images/VeganR.png)
 
 # VeganRify🥑
 
