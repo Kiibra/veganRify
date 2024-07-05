@@ -36,19 +36,37 @@ h2{
 }
 
 .comments-head{
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   margin-left: 8px;
 }
 
 .comment-btns{
   display: flex;
-  
 }
 
 ul {
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(181, 179, 179);
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.comments {
+  background-color: rgb(234, 233, 233);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgb(68, 67, 67);
+}
+
+.comments li{
+  list-style:circle;
 }
 
 h3{
@@ -79,12 +97,11 @@ img {
 }
 
 .delete-comment-btn {
-  background-color: #8f172d;
-  color:beige;
-  width: 2vh;
-  height: 2vh;
-  font-size: 12px;
+  color:rgb(231, 52, 12);
+  width: 1px;
+  height: 1px;
   border: 0px;
+  margin-left: 10px;
 }
 
 .delete-btn {
@@ -97,6 +114,10 @@ img {
 
 .edit-comment-btn{
   font-size: 10px;
-  width: 2vh;
-  height: 2vh;
+  width: 2px;
+  height: 2px;
+}
+
+.comment-btns > a {
+  text-decoration: none;
 }

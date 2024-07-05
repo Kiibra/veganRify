@@ -12,6 +12,7 @@ h1{
 h3{
   margin-right: 20vh;
 }
+
 .comment-form {
   border: 2px solid rgb(180, 175, 174);
   background-color: #eff3f5;
@@ -33,6 +34,7 @@ textarea {
 label{
   font-weight: 500;
 }
+
 .update-btn {
   justify-content: flex-end;
   align-items: flex-end;
