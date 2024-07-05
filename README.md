@@ -41,6 +41,6 @@ VeganRify🥑. Discover ethical eating made easy with VeganRify – your ultimat
 ### `Ice Box🧊`
 *** 
 - [] AAU, I should be able to  click somewhere and see only my posts.
-- [] AAU, I should be able to go to a page and see a list of profiles fother users.
-- [] AAU, I should be able to lookup for images of my products rather having to copy/paste image address.
+- [] AAU, I should be able to go to a page and see a list of profiles of other users.
+- [] AAU,  I should be able to lookup for images of my products rather having to copy/paste image address.
 - [] AAU or a guest, I want to have the option to scan the bar code of the item to check if it is vegan or not.

@@ -25,7 +25,7 @@ h2 {
 
 .scroller {
   height: 90vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   scroll-snap-type: y mandatory;
   display: flex;
   justify-content: center;
@@ -33,6 +33,10 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 4px;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
 }
 
 .search-inst {
